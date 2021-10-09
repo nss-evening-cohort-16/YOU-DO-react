@@ -14,7 +14,6 @@ const createTodo = (object) => new Promise((resolve, reject) => {
   axios
     .post(`${baseURL}/todos.json`, object)
     .then((response) => {
-      resolve(response);
       axios
         .patch(`${baseURL}/todos/${response.data.name}.json`, {
           firebaseKey: response.data.name,
