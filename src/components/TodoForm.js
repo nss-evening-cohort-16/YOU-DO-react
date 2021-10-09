@@ -34,8 +34,8 @@ export default function TodoForm({ obj }) {
             id="name"
             name="name"
             value={formInput.name}
-            required
             onChange={handleChange}
+            required
           />
         </label>
         <button type="submit">Submit</button>
