@@ -55,6 +55,7 @@ NOTE: **DO NOT** make style changes. Follow the wireframe as designed as it uses
 
 ### STYLE
 - As a user, I want to see the designs from the wireframe
+- [Sample PR with Styling using `styled-components` package](https://github.com/nss-evening-cohort-16/YOU-DO-react/pull/9/files)
 
 ## STRETCH Acceptance Critieria
 **DO THESE IN ORDER OR BE FIRED**
