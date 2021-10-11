@@ -53,6 +53,9 @@ NOTE: **DO NOT** make style changes. Follow the wireframe as designed as it uses
 - As a user, when I press the update button on the form, any changes made to the YOU-DO should be patched to firebase and the DOM should update with the new value.
 - As an engineering hiring manager, I want to see a README that reflects the details of the project with the software engineers details and not THESE instructions.
 
+### STYLE
+- As a user, I want to see the designs from the wireframe
+
 ## STRETCH Acceptance Critieria
 **DO THESE IN ORDER OR BE FIRED**
 - Review the [STRETCH wireframe](https://www.figma.com/file/ggEHuoIjQoUOLTylmQZnTK/YOU-DO-STRETCH)
