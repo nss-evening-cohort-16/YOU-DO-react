@@ -4,7 +4,10 @@ import PropTypes from 'prop-types';
 export default function Todo({ taco }) {
   return (
     <>
-      <div className="alert alert-light" role="alert">
+      <div
+        className="d-flex justify-content-between alert alert-light"
+        role="alert"
+      >
         <button className="btn btn-success" type="button">
           COMPLETE
         </button>

@@ -1,14 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { createTodo } from '../api/data/todoData';
 
-export default function TodoForm({ obj }) {
-  const [formInput, setInput] = useState({
-    name: obj.name || '',
-  });
+const initialState = {
+  name: '',
+  complete: false,
+  uid: '',
+};
+export default function TodoForm({ obj, setTodos }) {
+  const [formInput, setFormInput] = useState(initialState);
+
+  useEffect(() => {
+    if (obj.firebaseKey) {
+      setFormInput({
+        name: obj.name,
+        firebaseKey: obj.firebaseKey,
+        complete: obj.complete,
+        date: obj.date,
+        uid: obj.uid,
+      });
+    }
+  }, [obj]);
+
+  const resetForm = () => {
+    setFormInput({ ...initialState });
+  };
 
   const handleChange = (e) => {
-    setInput((prevState) => ({
+    setFormInput((prevState) => ({
       ...prevState,
       [e.target.name]: e.target.value,
     }));
@@ -16,11 +35,14 @@ export default function TodoForm({ obj }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    createTodo(formInput).then(() => {
-      setInput({
-        name: '',
+    if (obj.firebaseKey) {
+      // update the todo
+    } else {
+      createTodo({ ...formInput, date: new Date() }).then((todos) => {
+        setTodos(todos);
+        resetForm();
       });
-    });
+    }
   };
 
   return (
@@ -35,6 +57,7 @@ export default function TodoForm({ obj }) {
             name="name"
             value={formInput.name}
             onChange={handleChange}
+            placeholder="Enter A You Do!"
             required
           />
         </label>
@@ -47,7 +70,12 @@ export default function TodoForm({ obj }) {
 TodoForm.propTypes = {
   obj: PropTypes.shape({
     name: PropTypes.string,
+    complete: PropTypes.bool,
+    date: PropTypes.string,
+    firebaseKey: PropTypes.string,
+    uid: PropTypes.string,
   }),
+  setTodos: PropTypes.func.isRequired,
 };
 
 TodoForm.defaultProps = {
