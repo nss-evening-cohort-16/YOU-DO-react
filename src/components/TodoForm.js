@@ -17,9 +17,8 @@ export default function TodoForm({ obj }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     createTodo(formInput).then(() => {
-      setInput({
-        name: '',
-      });
+      // update the DOM with the new Todo
+      // reset the form
     });
   };
 
