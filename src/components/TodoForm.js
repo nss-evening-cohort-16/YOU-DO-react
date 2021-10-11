@@ -55,6 +55,9 @@ export default function TodoForm({ obj, setTodos }) {
     <div>
       <form onSubmit={handleSubmit}>
         <div className="mb-3 d-flex">
+          <label htmlFor="name" className="form-label visually-hidden">
+            Name
+          </label>
           <input
             className="form-control form-control-lg me-3"
             type="text"
