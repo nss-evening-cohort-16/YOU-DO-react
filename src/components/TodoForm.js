@@ -69,7 +69,7 @@ export default function TodoForm({ obj, setTodos }) {
             required
           />
           <button className="btn btn-success" type="submit">
-            Submit
+            {obj.firebaseKey ? 'Update' : 'Submit'}
           </button>
         </div>
       </form>
