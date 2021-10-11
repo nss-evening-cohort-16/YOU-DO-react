@@ -18,11 +18,16 @@ const createTodo = (object) => new Promise((resolve, reject) => {
         .patch(`${baseURL}/todos/${response.data.name}.json`, {
           firebaseKey: response.data.name,
         })
-        .then(() => {
-          getTodos().then(resolve);
-        });
+        .then(() => getTodos().then(resolve));
     })
     .catch(reject);
 });
 
-export { getTodos, createTodo };
+const deleteTodo = (firebaseKey) => new Promise((resolve, reject) => {
+  axios
+    .delete(`${baseURL}/todos/${firebaseKey}.json`)
+    .then(() => getTodos().then(resolve))
+    .catch(reject);
+});
+
+export { getTodos, createTodo, deleteTodo };
