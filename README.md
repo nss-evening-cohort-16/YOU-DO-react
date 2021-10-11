@@ -44,7 +44,7 @@ NOTE: **DO NOT** make style changes. Follow the wireframe as designed as it uses
 ### UPDATE
 #### PATCH COMPLETE
 - As a user, I can complete a YOU-DO item by pressing a green button that reads "COMPLETE"
-- As a user, when I press complete, I should no longer see the item on the DOM and the done attribute should update in firebase to `true`
+- As a user, when I press complete, I should no longer see the item on the DOM and the complete attribute should update in firebase to `true`
 
 #### PATCH NAME
 - As a user, I should be able to edit a YOU-DO using the same form used to create a YOU-DO.
