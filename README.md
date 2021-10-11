@@ -30,12 +30,27 @@ Below are the steps to get setup, which you should already be very familiar with
 ## MVP Acceptance Criteria
 NOTE: **DO NOT** make style changes. Follow the wireframe as designed as it uses Bootstrap Components that will make your app development faster. If you are able to complete MVP, move on to the stretch goals.
 
+### READ
+- As a user, I can read all YOU-DO items in the database
+
+### CREATE
 - As a user, I can add an item to my YOU-DO list by typing in the input and pressing submit
 - As a user, when I press submit, I should see the newly added YOU-DO on the DOM
-- As a user, I can complete a YOU-DO item by pressing a green button that reads "COMPLETE"
-- As a user, when I press complete, I should no longer see the item on the DOM and the done attribute should update in firebase to `true`
+
+### DELETE
 - As a user, I can delete a YOU-DO by pressing a red button that reads "DELETE"
 - As a user, when I press delete, the YOU-DO should be deleted from firebase and I should no longer see it on the DOM
+
+### UPDATE
+#### PATCH COMPLETE
+- As a user, I can complete a YOU-DO item by pressing a green button that reads "COMPLETE"
+- As a user, when I press complete, I should no longer see the item on the DOM and the done attribute should update in firebase to `true`
+
+#### PATCH NAME
+- As a user, I should be able to edit a YOU-DO using the same form used to create a YOU-DO.
+- As a user, I can edit a YOU-DO by pressing a blue button that reads "EDIT"
+- As a user, when I press edit, the form should contain the YOU-DO value and the submit button text should change to "UPDATE"
+- As a user, when I press the update button on the form, any changes made to the YOU-DO should be patched to firebase and the DOM should update with the new value.
 - As an engineering hiring manager, I want to see a README that reflects the details of the project with the software engineers details and not THESE instructions.
 
 ## STRETCH Acceptance Critieria
