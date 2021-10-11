@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Alert } from 'reactstrap';
 
 export default function Todo({ taco }) {
   return (
     <>
-      <Alert color="light">
+      <div className="alert alert-light" role="alert">
         <button className="btn btn-success" type="button">
           COMPLETE
         </button>
@@ -13,7 +12,7 @@ export default function Todo({ taco }) {
         <button className="btn btn-danger" type="button">
           DELETE
         </button>
-      </Alert>
+      </div>
     </>
   );
 }
