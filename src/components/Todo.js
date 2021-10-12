@@ -13,7 +13,10 @@ export default function Todo({ taco, setTodos }) {
 
   return (
     <>
-      <div className="alert alert-light" role="alert">
+      <div
+        className="d-flex justify-content-between alert alert-light"
+        role="alert"
+      >
         <button
           onClick={() => handleClick('complete')}
           className="btn btn-success"
