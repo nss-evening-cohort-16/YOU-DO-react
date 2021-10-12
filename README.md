@@ -22,6 +22,7 @@ Below are the steps to get setup, which you should already be very familiar with
 7. CODE!
 
 ## IN CLASS
+### MVP
 - [Set up firebase](https://github.com/nss-evening-cohort-16/YOU-DO-react/pull/1/files)
 - [Add useEffect](https://github.com/nss-evening-cohort-16/YOU-DO-react/pull/2/files)
 - [Map Todos](https://github.com/nss-evening-cohort-16/YOU-DO-react/pull/3/files)
@@ -30,6 +31,9 @@ Below are the steps to get setup, which you should already be very familiar with
 - [Pass functions as props](https://github.com/nss-evening-cohort-16/YOU-DO-react/pull/7/files)
 - [Refactor form to allow update](https://github.com/nss-evening-cohort-16/YOU-DO-react/pull/6/files)
 - [Update todo](https://github.com/nss-evening-cohort-16/YOU-DO-react/pull/8/files)
+
+### STRETCH
+- Coming soon
 
 ## MVP Acceptance Criteria
 NOTE: **DO NOT** make style changes. Follow the wireframe as designed as it uses Bootstrap Components that will make your app development faster. If you are able to complete MVP, move on to the stretch goals.
