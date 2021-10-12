@@ -22,7 +22,7 @@ Below are the steps to get setup, which you should already be very familiar with
 7. CODE!
 
 ## IN CLASS
-### MVP
+### CRUD
 - [Set up firebase](https://github.com/nss-evening-cohort-16/YOU-DO-react/pull/1/files)
 - [Add useEffect](https://github.com/nss-evening-cohort-16/YOU-DO-react/pull/2/files)
 - [Map Todos](https://github.com/nss-evening-cohort-16/YOU-DO-react/pull/3/files)
@@ -31,11 +31,11 @@ Below are the steps to get setup, which you should already be very familiar with
 - [Pass functions as props](https://github.com/nss-evening-cohort-16/YOU-DO-react/pull/7/files)
 - [Styling using `styled-components` package](https://github.com/nss-evening-cohort-16/YOU-DO-react/pull/11/files)
 
-### STRETCH
+### ADVANCED
 - [Refactor form to allow update](https://github.com/nss-evening-cohort-16/YOU-DO-react/pull/6/files)
 - [Update todo name in form](https://github.com/nss-evening-cohort-16/YOU-DO-react/pull/8/files)
 
-## MVP Acceptance Criteria
+## CRUD Acceptance Criteria
 NOTE: **DO NOT** make style changes. Follow the wireframe as designed as it uses Bootstrap Components that will make your app development faster. If you are able to complete MVP, move on to the stretch goals.
 
 ### READ
@@ -57,7 +57,7 @@ NOTE: **DO NOT** make style changes. Follow the wireframe as designed as it uses
 - As a user, I want to see the designs from the wireframe
 - As an engineering hiring manager, I want to see a README that reflects the details of the project with the software engineers details and not THESE instructions.
 
-## STRETCH Acceptance Critieria
+## ADVANCED Acceptance Critieria
 **DO THESE IN ORDER OR BE FIRED**
 - Review the [STRETCH wireframe](https://www.figma.com/file/ggEHuoIjQoUOLTylmQZnTK/YOU-DO-STRETCH)
 
