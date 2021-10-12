@@ -53,8 +53,9 @@ NOTE: **DO NOT** make style changes. Follow the wireframe as designed as it uses
 - As a user, I can complete a YOU-DO item by pressing a green button that reads "COMPLETE"
 - As a user, when I press complete, I should no longer see the item on the DOM and the complete attribute should update in firebase to `true`
 
-### STYLE
+### STYLE AND FINISHING TOUCHES
 - As a user, I want to see the designs from the wireframe
+- As an engineering hiring manager, I want to see a README that reflects the details of the project with the software engineers details and not THESE instructions.
 
 ## STRETCH Acceptance Critieria
 **DO THESE IN ORDER OR BE FIRED**
@@ -65,7 +66,6 @@ NOTE: **DO NOT** make style changes. Follow the wireframe as designed as it uses
 - As a user, I can edit a YOU-DO by pressing a blue button that reads "EDIT"
 - As a user, when I press edit, the form should contain the YOU-DO value and the submit button text should change to "UPDATE"
 - As a user, when I press the update button on the form, any changes made to the YOU-DO should be patched to firebase and the DOM should update with the new value.
-- As an engineering hiring manager, I want to see a README that reflects the details of the project with the software engineers details and not THESE instructions.
 
 ### ADD CATEGORIES
 - As a user, I should be able to select from a pre-defined list of categories for the YOU-DOs I create.
