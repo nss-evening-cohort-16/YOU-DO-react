@@ -65,7 +65,11 @@ NOTE: **DO NOT** make style changes. Follow the wireframe as designed as it uses
 - As a user, I should be able to edit a YOU-DO using the same form used to create a YOU-DO.
 - As a user, I can edit a YOU-DO by pressing a blue button that reads "EDIT"
 - As a user, when I press edit, the form should contain the YOU-DO value and the submit button text should change to "UPDATE"
-- As a user, when I press the update button on the form, any changes made to the YOU-DO should be patched to firebase and the DOM should update with the new value.
+- As a user, when I press the update button on the form:
+  - any changes made to the YOU-DO should be patched to firebase
+  - the DOM should update with the new value
+  - the input should be cleared
+  - the form state should be reset
 
 ### ADD CATEGORIES
 - As a user, I should be able to select from a pre-defined list of categories for the YOU-DOs I create.
