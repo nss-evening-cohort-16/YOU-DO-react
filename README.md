@@ -31,6 +31,7 @@ Below are the steps to get setup, which you should already be very familiar with
 - [Pass functions as props](https://github.com/nss-evening-cohort-16/YOU-DO-react/pull/7/files)
 - [Refactor form to allow update](https://github.com/nss-evening-cohort-16/YOU-DO-react/pull/6/files)
 - [Update todo](https://github.com/nss-evening-cohort-16/YOU-DO-react/pull/8/files)
+- [Styling using `styled-components` package](https://github.com/nss-evening-cohort-16/YOU-DO-react/pull/11/files)
 
 ### STRETCH
 - Coming soon
@@ -55,7 +56,6 @@ NOTE: **DO NOT** make style changes. Follow the wireframe as designed as it uses
 
 ### STYLE
 - As a user, I want to see the designs from the wireframe
-- [Styling using `styled-components` package](https://github.com/nss-evening-cohort-16/YOU-DO-react/pull/11/files)
 
 ## STRETCH Acceptance Critieria
 **DO THESE IN ORDER OR BE FIRED**
