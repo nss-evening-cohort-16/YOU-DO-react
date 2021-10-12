@@ -81,6 +81,11 @@ NOTE: **DO NOT** make style changes. Follow the wireframe as designed as it uses
 - As a user, if I select "View Completed" I should only see the completed YOU-DOs and whatever is shown in the wireframe
 - As a user, if I select "View Completed" I should only see the URL in the web browser update to `.../completed`
 
+### AUTHENTICATION
+- As a user, I should be able to log in to the application
+  - No views should be available for me until I login
+  - I should only see my YOU-DOs upon logging in to the application
+
 ### FINISHING TOUCHES
 - As an engineering hiring manager, I want to see a README that reflects the details of the project with the software engineers details and not THESE instructions.
   - ERD
