@@ -15,6 +15,11 @@ const Container = styled.div`
     font-size: 64px;
     font-weight: 400;
   }
+
+  h3 {
+    color: lightgrey;
+    text-align: center;
+  }
 `;
 
 function Initialize() {
@@ -30,14 +35,18 @@ function Initialize() {
       <h1>YOU-DO</h1>
       <TodoForm obj={editItem} setTodos={setTodos} setEditItem={setEditItem} />
       <div className="mt-5">
-        {todos.map((todo) => (
-          <Todo
-            key={todo.firebaseKey}
-            taco={todo}
-            setTodos={setTodos}
-            setEditItem={setEditItem}
-          />
-        ))}
+        {todos.length ? (
+          todos.map((todo) => (
+            <Todo
+              key={todo.firebaseKey}
+              taco={todo}
+              setTodos={setTodos}
+              setEditItem={setEditItem}
+            />
+          ))
+        ) : (
+          <h3>Add A You Do!</h3>
+        )}
       </div>
     </Container>
   );
