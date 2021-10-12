@@ -49,7 +49,7 @@ NOTE: **DO NOT** make style changes. Follow the wireframe as designed as it uses
 - As a user, I can delete a YOU-DO by pressing a red button that reads "DELETE"
 - As a user, when I press delete, the YOU-DO should be deleted from firebase and I should no longer see it on the DOM
 
-### UPDATE COMPLETE
+### UPDATE `COMPLETE` ATTRIBUTE on YOU-DO
 - As a user, I can complete a YOU-DO item by pressing a green button that reads "COMPLETE"
 - As a user, when I press complete, I should no longer see the item on the DOM and the complete attribute should update in firebase to `true`
 
