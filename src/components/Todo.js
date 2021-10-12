@@ -45,7 +45,7 @@ export default function Todo({ taco, setTodos, setEditItem }) {
           className="btn btn-success"
           type="button"
         >
-          <i className="fas fa-circle fa-2x" />
+          COMPLETE
         </button>
       )}
       <h5>{taco.name}</h5>
