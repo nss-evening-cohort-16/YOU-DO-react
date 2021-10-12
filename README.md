@@ -73,6 +73,7 @@ NOTE: **DO NOT** make style changes. Follow the wireframe as designed as it uses
 - As an engineering hiring manager, I want to see a README that reflects the details of the project with the software engineers details and not THESE instructions.
   - ERD
   - Wireframe Link
+  - Deployed App Link
   - Code Sample
   - Loom Video
 
