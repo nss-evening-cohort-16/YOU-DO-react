@@ -36,7 +36,7 @@ Below are the steps to get setup, which you should already be very familiar with
 - [Update todo name in form](https://github.com/nss-evening-cohort-16/YOU-DO-react/pull/8/files)
 
 ## CRUD Acceptance Criteria
-NOTE: **DO NOT** make style changes. Follow the wireframe as designed as it uses Bootstrap Components that will make your app development faster. If you complete CRUD, move on to the Advanced goals.
+NOTE: **DO NOT** make style changes. Follow the wireframe as designed as it uses Bootstrap Components that will make your app development faster. When you complete CRUD, move on to the Advanced goals.
 
 ### READ
 - As a user, I can read all YOU-DO items in the database
