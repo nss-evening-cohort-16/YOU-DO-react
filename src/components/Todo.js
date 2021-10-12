@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { deleteTodo } from '../api/data/todoData';
 
-export default function Todo({ taco, setTodos, setEditItem }) {
+export default function Todo({ taco, setTodos }) {
   const handleClick = (method) => {
     if (method === 'delete') {
       deleteTodo(taco.firebaseKey).then(setTodos);
@@ -26,13 +26,6 @@ export default function Todo({ taco, setTodos, setEditItem }) {
         </button>
         {taco.name}
         <button
-          onClick={() => setEditItem(taco)}
-          className="btn btn-info"
-          type="button"
-        >
-          EDIT
-        </button>
-        <button
           onClick={() => handleClick('delete')}
           className="btn btn-danger"
           type="button"
@@ -53,5 +46,4 @@ Todo.propTypes = {
     uid: PropTypes.string,
   }).isRequired,
   setTodos: PropTypes.func.isRequired,
-  setEditItem: PropTypes.func.isRequired,
 };
