@@ -36,7 +36,8 @@ NOTE: **DO NOT** make style changes. Follow the wireframe as designed as it uses
 
 [CRUD Sample App](https://you-do.netlify.app/)
 
-<img width="974" alt="Screen Shot 2021-10-12 at 12 11 05 PM" src="https://user-images.githubusercontent.com/29741570/137000078-1e948f87-84f4-434c-a806-439e46ef424d.png">
+<img width="889" alt="Screen Shot 2021-10-12 at 8 38 38 PM" src="https://user-images.githubusercontent.com/29741570/137052040-ed3d9e25-c53b-46a5-a2f9-47c4d0e44b70.png">
+
 
 ### READ
 - As a user, I can read all YOU-DO items in the database
