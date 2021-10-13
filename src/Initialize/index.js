@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { getTodos } from '../api/data/todoData';
-import Todo from '../components/Todo';
 import TodoForm from '../components/TodoForm';
+import Navigation from '../components/Navigation';
+import Routes from '../routes';
 
 const Container = styled.div`
   width: 60%;
@@ -32,22 +33,9 @@ function Initialize() {
 
   return (
     <Container>
-      <h1>YOU-DO</h1>
+      <Navigation />
       <TodoForm obj={editItem} setTodos={setTodos} setEditItem={setEditItem} />
-      <div className="mt-5">
-        {todos.length ? (
-          todos.map((todo) => (
-            <Todo
-              key={todo.firebaseKey}
-              taco={todo}
-              setTodos={setTodos}
-              setEditItem={setEditItem}
-            />
-          ))
-        ) : (
-          <h3>Add A You Do!</h3>
-        )}
-      </div>
+      <Routes todos={todos} setTodos={setTodos} setEditItem={setEditItem} />
     </Container>
   );
 }
