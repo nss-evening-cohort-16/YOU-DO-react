@@ -1,5 +1,7 @@
 # YOU-DO App
 
+[Sample App](https://you-do.netlify.app/)
+
 ## Get Started
 1. Open the `package.json` file and change the `name` property to the name of your application, and `author` to  your name
 1. Open the `/public/index.html` file and change the `title` attribute to the name of your application
