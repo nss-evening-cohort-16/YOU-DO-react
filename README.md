@@ -33,6 +33,7 @@ Below are the steps to get setup, which you should already be very familiar with
 
 ### ADVANCED
 - [Add Routing to Application without Categories](https://github.com/nss-evening-cohort-16/YOU-DO-react/pull/16/files)
+- [Authentication without Categories](https://github.com/nss-evening-cohort-16/YOU-DO-react/pull/17/files)
 - [Categories on the DOM](https://github.com/nss-evening-cohort-16/YOU-DO-react/pull/13/files)
 - [Add Routing to Application with Categories](https://github.com/nss-evening-cohort-16/YOU-DO-react/pull/15/files)
 
