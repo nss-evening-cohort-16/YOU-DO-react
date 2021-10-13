@@ -1,9 +1,5 @@
 # YOU-DO App
 
-[Sample App](https://you-do.netlify.app/)
-
-<img width="974" alt="Screen Shot 2021-10-12 at 12 11 05 PM" src="https://user-images.githubusercontent.com/29741570/137000078-1e948f87-84f4-434c-a806-439e46ef424d.png">
-
 ## Get Started
 1. Open the `package.json` file and change the `name` property to the name of your application, and `author` to  your name
 1. Open the `/public/index.html` file and change the `title` attribute to the name of your application
@@ -38,6 +34,10 @@ Below are the steps to get setup, which you should already be very familiar with
 ## CRUD Acceptance Criteria
 NOTE: **DO NOT** make style changes. Follow the wireframe as designed as it uses Bootstrap Components that will make your app development faster. When you complete CRUD, move on to the Advanced goals.
 
+[CRUD Sample App](https://you-do.netlify.app/)
+
+<img width="974" alt="Screen Shot 2021-10-12 at 12 11 05 PM" src="https://user-images.githubusercontent.com/29741570/137000078-1e948f87-84f4-434c-a806-439e46ef424d.png">
+
 ### READ
 - As a user, I can read all YOU-DO items in the database
 
@@ -53,14 +53,6 @@ NOTE: **DO NOT** make style changes. Follow the wireframe as designed as it uses
 - As a user, I can complete a YOU-DO item by pressing a green button that reads "COMPLETE"
 - As a user, when I press complete, I should no longer see the item on the DOM and the complete attribute should update in firebase to `true`
 
-### STYLE AND FINISHING TOUCHES
-- As a user, I want to see the designs from the wireframe
-- As an engineering hiring manager, I want to see a README that reflects the details of the project with the software engineers details and not THESE instructions.
-
-## ADVANCED Acceptance Critieria
-**DO THESE IN ORDER OR BE FIRED**
-- Review the [STRETCH wireframe](https://www.figma.com/file/ggEHuoIjQoUOLTylmQZnTK/YOU-DO-STRETCH)
-
 ### UPDATE NAME
 - As a user, I should be able to edit a YOU-DO using the same form used to create a YOU-DO.
 - As a user, I can edit a YOU-DO by pressing a blue button that reads "EDIT"
@@ -70,6 +62,14 @@ NOTE: **DO NOT** make style changes. Follow the wireframe as designed as it uses
   - the DOM should update with the new value
   - the input should be cleared
   - the form state should be reset
+
+### STYLE AND FINISHING TOUCHES
+- As a user, I want to see the designs from the wireframe
+- As an engineering hiring manager, I want to see a README that reflects the details of the project with the software engineers details and not THESE instructions.
+
+## ADVANCED Acceptance Critieria
+**DO THESE IN ORDER OR BE FIRED**
+- Review the [STRETCH wireframe](https://www.figma.com/file/ggEHuoIjQoUOLTylmQZnTK/YOU-DO-STRETCH)
 
 ### ADD CATEGORIES
 - As a user, I should be able to select from a pre-defined list of categories for the YOU-DOs I create.
