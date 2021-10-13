@@ -66,7 +66,7 @@ function Initialize() {
       <h1>YOU-DO</h1>
       <TodoForm obj={editItem} setTodos={setTodos} setEditItem={setEditItem} />
       <div className="mt-5">
-        {todos.length ? categoryGroups() : <h3>Add A You Do!</h3>}
+        {todos.length ? categoryGroups() : <h3>Add A YOU DO!</h3>}
       </div>
     </Container>
   );
