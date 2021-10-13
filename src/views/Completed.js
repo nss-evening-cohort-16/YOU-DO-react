@@ -7,9 +7,13 @@ export default function Completed({ todos, setTodos }) {
   const [completedTodos, setCompletedTodos] = useState([]);
 
   useEffect(() => {
+    let isMounted = true;
     getTodos(true).then((todoArray) => {
-      setCompletedTodos(todoArray);
+      if (isMounted) setCompletedTodos(todoArray);
     });
+    return () => {
+      isMounted = false;
+    };
   }, [todos]);
 
   return (
