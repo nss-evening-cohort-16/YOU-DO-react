@@ -36,20 +36,32 @@ function Initialize() {
   }, []);
 
   const categoryGroups = () => {
-    const obj = {};
-    todos.forEach((todo) => {
-      // LOOKING to see if a key of item exists
-      if (todo.category in obj) {
-        obj[todo.category] = [...obj[todo.category], todo];
-      } else {
-        obj[todo.category] = [todo];
-      }
-    });
+    // const sortedObj = {};
+    // todos.forEach((todo) => {
+    //   // LOOKING to see if a key of item exists
+    //   if (todo.category in sortedObj) {
+    //   // if so, set the value of the key array to the spreaded object and the current todo
+    //     sortedObj[todo.category] = [...sortedObj[todo.category], todo];
+    //   } else {
+    //   // if not, create the category and set the value as the current todo
+    //     sortedObj[todo.category] = [todo];
+    //   }
+    // });
 
-    return Object.keys(obj).map((cat) => (
-      <div key={cat}>
-        <h4>Category {cat}</h4>
-        {obj[cat].map((todo) => (
+    // DOING THE SAME AS ABOVE USING REDUCE
+    const sortedObj = todos.reduce((data, currentObject) => {
+      const main = data;
+      // if the current category already exists, push the currentObject into the array...otherwise, set the value to an array and push the currentObject into it.
+      (main[currentObject.category] = main[currentObject.category] || []).push(
+        currentObject,
+      );
+      return main;
+    }, {});
+
+    return Object.keys(sortedObj).map((category) => (
+      <div key={category}>
+        <h4>Category {category}</h4>
+        {sortedObj[category].map((todo) => (
           <Todo
             key={todo.firebaseKey}
             taco={todo}
