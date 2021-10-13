@@ -24,6 +24,11 @@ const Container = styled.div`
     color: lightgrey;
     text-align: center;
   }
+  h4 {
+    color: lightgrey;
+    text-transform: uppercase;
+    font-size: medium;
+  }
 `;
 
 function Initialize() {
@@ -43,7 +48,7 @@ function Initialize() {
         };
         setUser(userInfoObj);
         // TODO: Refactor code for users to only see their todos
-        getTodos().then(setTodos);
+        getTodos(false).then(setTodos);
       } else if (user || user === null) {
         setUser(false);
       }

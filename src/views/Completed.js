@@ -1,22 +1,27 @@
 import React, { useEffect, useState } from 'react';
-import { getCompletedTodos } from '../api/data/todoData';
-import CompletedTodos from '../components/CompletedTodos';
+import PropTypes from 'prop-types';
+import { getTodos } from '../api/data/todoData';
+import Todo from '../components/Todo';
 
-export default function Completed() {
+export default function Completed({ todos, setTodos }) {
   const [completedTodos, setCompletedTodos] = useState([]);
 
   useEffect(() => {
-    getCompletedTodos().then(setCompletedTodos);
-  }, []);
+    getTodos(true).then((todoArray) => {
+      setCompletedTodos(todoArray);
+    });
+  }, [todos]);
+
   return (
     <div>
-      {completedTodos.map((completedTodo) => (
-        <CompletedTodos
-          key={completedTodo.firebaseKey}
-          completedTodo={completedTodo}
-          setCompletedTodos={setCompletedTodos}
-        />
+      {completedTodos.map((todo) => (
+        <Todo key={todo.firebaseKey} taco={todo} setTodos={setTodos} />
       ))}
     </div>
   );
 }
+
+Completed.propTypes = {
+  todos: PropTypes.arrayOf(PropTypes.object).isRequired,
+  setTodos: PropTypes.func.isRequired,
+};

@@ -1,18 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Todo from '../components/Todo';
+import CategorizedTodos from '../components/CategorizedTodos';
 
 export default function Home({ todos, setTodos, setEditItem }) {
   return (
-    <div>
-      {todos.map((todo) => (
-        <Todo
-          key={todo.firebaseKey}
-          taco={todo}
+    <div className="mt-5">
+      {todos.length ? (
+        <CategorizedTodos
+          todos={todos}
           setTodos={setTodos}
           setEditItem={setEditItem}
         />
-      ))}
+      ) : (
+        <h3>Add A YOU DO!</h3>
+      )}
     </div>
   );
 }
