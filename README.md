@@ -72,7 +72,7 @@ NOTE: **DO NOT** make style changes. Follow the wireframe as designed as it uses
 ## ADVANCED Acceptance Critieria
 **DO THESE IN ORDER OR BE FIRED**
 - Review the [STRETCH wireframe](https://www.figma.com/file/ggEHuoIjQoUOLTylmQZnTK/YOU-DO-STRETCH)
-- [Advanced Sample Site](https://advanced-complete--you-do.netlify.app/)
+- [Advanced Sample App](https://advanced-complete--you-do.netlify.app/)
 
 ### ADD CATEGORIES
 - As a user, I should be able to select from a pre-defined list of categories for the YOU-DOs I create.
