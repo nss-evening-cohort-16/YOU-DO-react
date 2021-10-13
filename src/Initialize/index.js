@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { getTodos } from '../api/data/todoData';
-import Todo from '../components/Todo';
+import CategorizedTodos from '../components/CategorizedTodos';
 import TodoForm from '../components/TodoForm';
 
 const Container = styled.div`
@@ -32,53 +32,25 @@ function Initialize() {
   const [editItem, setEditItem] = useState({});
 
   useEffect(() => {
-    getTodos().then(setTodos);
+    getTodos().then((todoArray) => {
+      setTodos(todoArray);
+    });
   }, []);
-
-  const categoryGroups = () => {
-    // const sortedObj = {};
-    // todos.forEach((todo) => {
-    //   // LOOKING to see if a key of item exists
-    //   if (todo.category in sortedObj) {
-    //   // if so, set the value of the key array to the spreaded object and the current todo
-    //     sortedObj[todo.category] = [...sortedObj[todo.category], todo];
-    //   } else {
-    //   // if not, create the category and set the value as the current todo
-    //     sortedObj[todo.category] = [todo];
-    //   }
-    // });
-
-    // DOING THE SAME AS ABOVE USING REDUCE
-    const sortedObj = todos.reduce((data, currentObject) => {
-      const main = data;
-      // if the current category already exists, push the currentObject into the array...otherwise, set the value to an array and push the currentObject into it.
-      (main[currentObject.category] = main[currentObject.category] || []).push(
-        currentObject,
-      );
-      return main;
-    }, {});
-
-    return Object.keys(sortedObj).map((category) => (
-      <div key={category}>
-        <h4>Category {category}</h4>
-        {sortedObj[category].map((todo) => (
-          <Todo
-            key={todo.firebaseKey}
-            taco={todo}
-            setTodos={setTodos}
-            setEditItem={setEditItem}
-          />
-        ))}
-      </div>
-    ));
-  };
 
   return (
     <Container>
       <h1>YOU-DO</h1>
       <TodoForm obj={editItem} setTodos={setTodos} setEditItem={setEditItem} />
       <div className="mt-5">
-        {todos.length ? categoryGroups() : <h3>Add A YOU DO!</h3>}
+        {todos.length ? (
+          <CategorizedTodos
+            todos={todos}
+            setTodos={setTodos}
+            setEditItem={setEditItem}
+          />
+        ) : (
+          <h3>Add A YOU DO!</h3>
+        )}
       </div>
     </Container>
   );
