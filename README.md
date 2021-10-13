@@ -18,6 +18,8 @@ Below are the steps to get setup, which you should already be very familiar with
 7. CODE!
 
 ## IN CLASS
+- [Slide Deck](https://docs.google.com/presentation/d/1P8hMbGYM_9V8DNiJBH28TysYQPZvSQaYaqUNi1YcO6c/edit?usp=sharing)
+
 ### CRUD
 - [Set up firebase](https://github.com/nss-evening-cohort-16/YOU-DO-react/pull/1/files)
 - [Add useEffect](https://github.com/nss-evening-cohort-16/YOU-DO-react/pull/2/files)
