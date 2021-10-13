@@ -1,5 +1,7 @@
 # YOU-DO App
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0462fee4-8fed-4183-a3aa-8d31f8d44098/deploy-status)](https://app.netlify.com/sites/you-do/deploys)
+
 ## Get Started
 1. Open the `package.json` file and change the `name` property to the name of your application, and `author` to  your name
 1. Open the `/public/index.html` file and change the `title` attribute to the name of your application
