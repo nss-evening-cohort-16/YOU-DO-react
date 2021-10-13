@@ -80,5 +80,9 @@ Todo.propTypes = {
     uid: PropTypes.string,
   }).isRequired,
   setTodos: PropTypes.func.isRequired,
-  setEditItem: PropTypes.func.isRequired,
+  setEditItem: PropTypes.func,
+};
+
+Todo.defaultProps = {
+  setEditItem: () => {},
 };

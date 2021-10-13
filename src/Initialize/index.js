@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { getTodos } from '../api/data/todoData';
-import CategorizedTodos from '../components/CategorizedTodos';
+import Navigation from '../components/Navigation';
 import TodoForm from '../components/TodoForm';
+import Routes from '../routes';
 
 const Container = styled.div`
   width: 60%;
@@ -32,26 +33,17 @@ function Initialize() {
   const [editItem, setEditItem] = useState({});
 
   useEffect(() => {
-    getTodos().then((todoArray) => {
+    getTodos(false).then((todoArray) => {
       setTodos(todoArray);
     });
   }, []);
 
   return (
     <Container>
+      <Navigation />
       <h1>YOU-DO</h1>
       <TodoForm obj={editItem} setTodos={setTodos} setEditItem={setEditItem} />
-      <div className="mt-5">
-        {todos.length ? (
-          <CategorizedTodos
-            todos={todos}
-            setTodos={setTodos}
-            setEditItem={setEditItem}
-          />
-        ) : (
-          <h3>Add A YOU DO!</h3>
-        )}
-      </div>
+      <Routes todos={todos} setTodos={setTodos} setEditItem={setEditItem} />
     </Container>
   );
 }
