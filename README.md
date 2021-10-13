@@ -79,7 +79,7 @@ NOTE: **DO NOT** make style changes. Follow the wireframe as designed as it uses
 - Review the [STRETCH wireframe](https://www.figma.com/file/ggEHuoIjQoUOLTylmQZnTK/YOU-DO-STRETCH)
 - [Advanced Sample App](https://advanced-complete--you-do.netlify.app/)
 
-<img width="793" alt="Screen Shot 2021-10-13 at 12 46 48 PM" src="https://user-images.githubusercontent.com/29741570/137185961-b1b4221a-11f3-4fc7-899e-c3f9d42b6788.png">
+<img width="823" alt="Screen Shot 2021-10-13 at 3 52 13 PM" src="https://user-images.githubusercontent.com/29741570/137210978-37ed657d-a549-4339-8817-fa0b712b2502.png">
 
 
 ### ADD CATEGORIES
