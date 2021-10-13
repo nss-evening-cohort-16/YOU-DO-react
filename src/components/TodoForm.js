@@ -61,13 +61,13 @@ export default function TodoForm({ obj, setTodos, setEditItem }) {
       <form onSubmit={handleSubmit}>
         <div className="mb-3 d-flex">
           <input
-            className="form-control form-control-lg me-3"
+            className="form-control form-control-lg me-1"
             type="text"
             id="name"
             name="name"
             value={formInput.name}
             onChange={handleChange}
-            placeholder="Enter A You Do!"
+            placeholder="ADD A YOU-DO"
             required
           />
           <button className="btn btn-success" type="submit">
