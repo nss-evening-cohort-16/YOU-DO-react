@@ -75,6 +75,9 @@ NOTE: **DO NOT** make style changes. Follow the wireframe as designed as it uses
 - Review the [STRETCH wireframe](https://www.figma.com/file/ggEHuoIjQoUOLTylmQZnTK/YOU-DO-STRETCH)
 - [Advanced Sample App](https://advanced-complete--you-do.netlify.app/)
 
+<img width="793" alt="Screen Shot 2021-10-13 at 12 46 48 PM" src="https://user-images.githubusercontent.com/29741570/137185961-b1b4221a-11f3-4fc7-899e-c3f9d42b6788.png">
+
+
 ### ADD CATEGORIES
 - As a user, I should be able to select from a pre-defined list of categories for the YOU-DOs I create.
 - As a user, when I complete the form to submit a YOU-DO, the newly created YOU-DO should be visible on the DOM under the specified category and the category should update in firebase to the category I selected.
