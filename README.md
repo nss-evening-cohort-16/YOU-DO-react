@@ -25,11 +25,12 @@ Below are the steps to get setup, which you should already be very familiar with
 - [Todo Component](https://github.com/nss-evening-cohort-16/YOU-DO-react/pull/4/files)
 - [Create a Todo](https://github.com/nss-evening-cohort-16/YOU-DO-react/pull/5/files)
 - [Pass functions as props](https://github.com/nss-evening-cohort-16/YOU-DO-react/pull/7/files)
+- [Refactor form to allow update](https://github.com/nss-evening-cohort-16/YOU-DO-react/pull/6/files)
+- [Update todo name in form](https://github.com/nss-evening-cohort-16/YOU-DO-react/pull/8/files)
 - [Styling using `styled-components` package](https://github.com/nss-evening-cohort-16/YOU-DO-react/pull/11/files)
 
 ### ADVANCED
-- [Refactor form to allow update](https://github.com/nss-evening-cohort-16/YOU-DO-react/pull/6/files)
-- [Update todo name in form](https://github.com/nss-evening-cohort-16/YOU-DO-react/pull/8/files)
+- [Categories on the DOM](https://github.com/nss-evening-cohort-16/YOU-DO-react/pull/13/files)
 
 ## CRUD Acceptance Criteria
 NOTE: **DO NOT** make style changes. Follow the wireframe as designed as it uses Bootstrap Components that will make your app development faster. When you complete CRUD, move on to the Advanced goals.
