@@ -55,7 +55,7 @@ export default function CategorizedTodos({ todos, setTodos, setEditItem }) {
 }
 
 CategorizedTodos.propTypes = {
-  todos: PropTypes.shape(PropTypes.array).isRequired,
+  todos: PropTypes.arrayOf(PropTypes.object).isRequired,
   setTodos: PropTypes.func.isRequired,
   setEditItem: PropTypes.func.isRequired,
 };
