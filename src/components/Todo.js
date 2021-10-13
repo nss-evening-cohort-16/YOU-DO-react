@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { deleteTodo } from '../api/data/todoData';
+import { deleteTodo, updateTodo } from '../api/data/todoData';
 
 export default function Todo({ taco, setTodos, setEditItem }) {
   const handleClick = (method) => {
     if (method === 'delete') {
       deleteTodo(taco.firebaseKey).then(setTodos);
     } else {
-      // update complete value on todo
+      updateTodo({ ...taco, complete: true }).then(setTodos);
     }
   };
 
