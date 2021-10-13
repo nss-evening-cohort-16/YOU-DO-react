@@ -13,7 +13,7 @@ export default function Completed({ todos, setTodos }) {
     });
     return () => {
       isMounted = false;
-    };
+    }; // cleanup function
   }, [todos]);
 
   return (
