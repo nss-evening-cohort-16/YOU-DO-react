@@ -110,4 +110,4 @@ NOTE: **DO NOT** make style changes. Follow the wireframe as designed as it uses
 If you are interested in setting up your own project for things outside of class, you can run the command to start a React project `npx create-react-app {APP_NAME}` and setup all the files and structures from scratch.
 
 - [Completed CRUD Project](https://github.com/nss-evening-cohort-16/YOU-DO-react/pull/10/files)
-- [Completed Advanced Project](https://github.com/nss-evening-cohort-16/YOU-DO-react/pull/14)
+- [Completed Advanced Project](https://github.com/nss-evening-cohort-16/YOU-DO-react/pull/14/files)
