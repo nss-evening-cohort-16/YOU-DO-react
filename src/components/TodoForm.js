@@ -78,8 +78,9 @@ export default function TodoForm({ obj, setTodos, setEditItem }) {
             name="category"
             value={formInput.category}
             onChange={handleChange}
+            required
           >
-            <option selected>Category</option>
+            <option value="">Category</option>
             <option value="1">One</option>
             <option value="2">Two</option>
             <option value="3">Three</option>

@@ -20,6 +20,11 @@ const Container = styled.div`
     color: lightgrey;
     text-align: center;
   }
+  h4 {
+    color: lightgrey;
+    text-transform: uppercase;
+    font-size: medium;
+  }
 `;
 
 function Initialize() {
@@ -30,23 +35,38 @@ function Initialize() {
     getTodos().then(setTodos);
   }, []);
 
+  const categoryGroups = () => {
+    const obj = {};
+    todos.forEach((todo) => {
+      // LOOKING to see if a key of item exists
+      if (todo.category in obj) {
+        obj[todo.category] = [...obj[todo.category], todo];
+      } else {
+        obj[todo.category] = [todo];
+      }
+    });
+
+    return Object.keys(obj).map((cat) => (
+      <div key={cat}>
+        <h4>Category {cat}</h4>
+        {obj[cat].map((todo) => (
+          <Todo
+            key={todo.firebaseKey}
+            taco={todo}
+            setTodos={setTodos}
+            setEditItem={setEditItem}
+          />
+        ))}
+      </div>
+    ));
+  };
+
   return (
     <Container>
       <h1>YOU-DO</h1>
       <TodoForm obj={editItem} setTodos={setTodos} setEditItem={setEditItem} />
       <div className="mt-5">
-        {todos.length ? (
-          todos.map((todo) => (
-            <Todo
-              key={todo.firebaseKey}
-              taco={todo}
-              setTodos={setTodos}
-              setEditItem={setEditItem}
-            />
-          ))
-        ) : (
-          <h3>Add A You Do!</h3>
-        )}
+        {todos.length ? categoryGroups() : <h3>Add A You Do!</h3>}
       </div>
     </Container>
   );
