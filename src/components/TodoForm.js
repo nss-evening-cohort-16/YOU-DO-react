@@ -6,6 +6,7 @@ import { createTodo, updateTodo } from '../api/data/todoData';
 const initialState = {
   name: '',
   complete: false,
+  category: '',
   uid: '',
 };
 export default function TodoForm({ obj, setTodos, setEditItem }) {
@@ -19,6 +20,7 @@ export default function TodoForm({ obj, setTodos, setEditItem }) {
         name: obj.name,
         firebaseKey: obj.firebaseKey,
         complete: obj.complete,
+        category: obj.category,
         date: obj.date,
         uid: obj.uid,
       });
@@ -60,9 +62,6 @@ export default function TodoForm({ obj, setTodos, setEditItem }) {
     <div>
       <form onSubmit={handleSubmit}>
         <div className="mb-3 d-flex">
-          <label htmlFor="name" className="form-label visually-hidden">
-            Name
-          </label>
           <input
             className="form-control form-control-lg me-1"
             type="text"
@@ -73,6 +72,18 @@ export default function TodoForm({ obj, setTodos, setEditItem }) {
             placeholder="ADD A YOU-DO"
             required
           />
+          <select
+            className="form-select form-select-lg me-1"
+            aria-label="category"
+            name="category"
+            value={formInput.category}
+            onChange={handleChange}
+          >
+            <option selected>Category</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
           <button className="btn btn-success" type="submit">
             {obj.firebaseKey ? 'Update' : 'Submit'}
           </button>
@@ -88,6 +99,7 @@ TodoForm.propTypes = {
     complete: PropTypes.bool,
     date: PropTypes.string,
     firebaseKey: PropTypes.string,
+    category: PropTypes.string,
     uid: PropTypes.string,
   }),
   setTodos: PropTypes.func.isRequired,
